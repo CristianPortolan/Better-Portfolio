@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* NAVBAR */ 
+
+.navbar {
+    background-color:#000000;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar a:hover {
+    color: rgba(238, 237, 237, 0.87);
+}
+
+.navbar p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2.5em;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.navbar__menu {
+    padding: 1.7em 5em 1.7em 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar section.navbar__menu__left {
+    flex: 1;
+}
+
+.navbar__responsive__menu__right {
+    display: none;
+}
+
+.navbar__responsive__button {
+    display: none;
+    color: white;
+}
+
+.navbar__menu__responsive__allscreen {
+    display: none;
+}
+
+
+
+/* PRESENTATION  */
+
+.presentation {
+    padding: 24.4em 0 24.4em 0;
+    background-color: #d1d1d1;
+    justify-content: center;
+    text-align: center;
+}
+
+.presentation > h1 {
+    font-size: 50px;
+    text-align: center; 
+    justify-content: center;
+}
+
+.presentation > p {
+    font-size: 20px;
+    margin-top: 1.2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ABOUT ME */ 
+
+.aboutme {
+    margin: 18em 0 18em 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutme > h1 {
+    font-size: 45px;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutme > p {
+    font-size: 18px;
+    padding: 0 12em 1.7em 12em;
+    margin: 1.2em 0 -20px 0;
+}
+
+.aboutme > p.aboutme__p__2 > i {
+    font-size: 12px;
+    margin: 0px 0.5em 0px 0.5em;
+}
+
+.aboutme > i {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutme__responsive__p {
+    display: none;
+}
+
+.aboutme__responsive__p__2 {
+    display: none;
+}
+
+/* SKILLS */ 
+
+.skills {
+    padding: 11em 0 11em 0;
+    background-color: rgba(238, 237, 237, 0.774);
+    justify-content: center;
+    text-align: center;
+}
+
+.skills > h1 {
+    
+    font-size: 45px;
+    padding-bottom: 0.7em;
+}
+
+.skills > p {
+    font-size: 18px;
+    margin-bottom: 2.5rem;
+}
+
+.skills__logos li {
+    margin: 1.5em 0 1.5em 0;
+}
+
+/* PROJECTS */
+
+.projects {
+    padding: 15em 0 15em 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.projects > h1 {
+    font-size: 45px;
+    margin-bottom: 0.5em;
+}
+
+.projects > p.projects__p {
+    font-size: 20px;
+    margin-bottom: 1.2em;
+}
+
+.projects > p.projects__i {
+    font-size: 0.8em;
+}
+
+.projects > section.projects__list {
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.projects > section.projects__list > li {
+    color: #000000;
+    margin: 1em 0 1.5em 0;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #000000;
+}
+    
+/* CONTACT */
+
+.contact {
+    padding: 3em 0 3em 0;
+    background-color: #000000;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 1px 1px 10px #000000;
+}
+
+.contact > h1 {
+    color: #ffffff;
+    font-size: 40px;
+    padding-bottom: 1.7rem;
+}
+
+.contact > p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 1.3em;
+}
+
+.contact li {
+    display: inline-block;
+    flex: 1;
+    margin: 0px 0.6em 0px 0.6em;
+    font-size: 20px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact a:hover {
+    color: rgba(238, 237, 237, 0.87);
+}
+
+/* RESPONSIVE DESIGN - MOBILE / TABLET */
+
+@media screen and (max-width:610px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+    }
+
+    /* NAVBAR */
+        
+    .navbar li {
+        display: none;
+    }
+
+    .navbar__responsive__menu__right li {
+        display: block;
+        color: white;
+    }
+
+    .navbar__menu__left p {
+        display: block;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navbar__responsive__button {
+        display: none;
+        font-size: 2.3rem;
+        margin: 0 0 0 1.5em;
+        cursor: pointer;
+    }
+
+    .navbar__menu__responsive__allscreen {
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        background-color: #000000;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .navbar__menu__responsive__allscreen li {
+        list-style: none;
+        color: #d1d1d1;
+        justify-content: center;
+        text-align: center;
+        padding: 1.3rem 1.5rem 1.5em 1.5rem;
+    }
+
+    .navbar__menu__responsive__allscreen ul {
+        margin-bottom: 20px;
+    }
+
+    .navbar__menu__responsive__allscreen a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /* ABOUT ME */
+
+    .aboutme p.aboutme__p {
+        display: none;
+    }
+
+    .aboutme p.aboutme__i {
+        display: none;
+    }
+
+    .aboutme p.aboutme__p__2 {
+        display: none
+    }
+
+    .aboutme > section.aboutme__responsive__p__2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1.8em;
+    }
+
+    .aboutme > section.aboutme__responsive__p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1em 4em 0 4em;
+        text-align: justify;
+    }
+
+    /* SKILLS */
+
+    .skills > p.skills__p {
+        margin: 0 1em 0 1em;
+    }
+
+    /* PROJECTS */
+
+    .projects {
+        margin: 0 0.8em 0 0.8em;
+        width: auto;
+        height: auto;
+    }
+
+    .projects > p.projects__p {
+        margin: 0 0.8em 0 0.8em;
+    }
+
+    .projects > p.projects__i {
+        margin-top: 1.3em;
+    }
+
+
+    /* CONTACT */
+
+    .contact > p {
+        margin: 0.2rem 0.8em 0 0.8em;
+    }
+
+    .contact > p.contact__p {
+        margin-bottom: 10px;
+    }
+
+    .contact > p.contact__i {
+        margin-bottom: 1.1rem;
+    }
+
+}
+
